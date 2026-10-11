@@ -46,10 +46,12 @@ export default function Home() {
   return <main>
     <nav className="nav shell"><a className="brand" href="#top" aria-label="PriceLab home"><span><Fish size={19} /></span> PriceLab</a><div className="nav-meta"><span className="pulse" /> TinyFish-powered market evidence</div></nav>
     <section className="hero shell" id="top">
-      <div className="eyebrow"><Sparkles size={14} /> AGENTIC MONETIZATION INTELLIGENCE</div>
-      <h1>Stop pricing from<br /><em>the rear-view mirror.</em></h1>
-      <p>Connect live market evidence to how customers adopt, consume, renew, and expand—then learn which packaging hypothesis to test next.</p>
-      <div className="hero-chips"><span><Search size={14} /> Live market</span><span><BarChart3 size={14} /> Unit economics</span><span><TestTube2 size={14} /> Experiment design</span></div>
+      <div className="hero-copy"><div className="eyebrow"><Sparkles size={14} /> AGENTIC MONETIZATION INTELLIGENCE</div>
+        <h1>Stop pricing from<br /><em>the rear-view mirror.</em></h1>
+        <p>Connect live market evidence to how customers adopt, consume, renew, and expand—then learn which packaging hypothesis to test next.</p>
+        <div className="hero-chips"><span><Search size={14} /> Live market</span><span><BarChart3 size={14} /> Unit economics</span><span><TestTube2 size={14} /> Experiment design</span></div>
+      </div>
+      <aside className="hero-flow" aria-label="PriceLab workflow"><div className="flow-top"><span>HOW IT WORKS</span><b>One decision loop</b></div><ol><li><span>01</span><div><b>Observe</b><small>Live pricing evidence</small></div></li><li><span>02</span><div><b>Model</b><small>Customer economics</small></div></li><li><span>03</span><div><b>Test</b><small>Falsifiable package</small></div></li></ol><p>Facts, assumptions, and inferences stay separate.</p></aside>
     </section>
 
     <section className="workspace shell">
@@ -77,7 +79,8 @@ export default function Home() {
         </div>
       </div>
       <div className="run-panel">
-        <button className="key-toggle" onClick={() => setShowKey(!showKey)}><ChevronDown size={15} className={showKey ? "rotated" : ""} /> Run on live TinyFish primitives</button>
+        <div className="run-heading"><span>READY TO ANALYZE</span><h3>Choose your evidence mode</h3></div>
+        <button className="key-toggle" onClick={() => setShowKey(!showKey)}><ChevronDown size={15} className={showKey ? "rotated" : ""} /> Live TinyFish workflow</button>
         {showKey && <div className="key-row"><input type="password" placeholder="Optional API key for local runs" value={apiKey} onChange={(e) => setApiKey(e.target.value)} /><button disabled={stage > 0 && !analysis} onClick={() => runAnalysis(true)}>Run live <ArrowRight size={16} /></button></div>}
         <button className="demo-button" disabled={stage > 0 && !analysis} onClick={() => runAnalysis(false)}>{stage > 0 && !analysis ? <><LoaderCircle className="spin" size={17} /> Running workflow</> : <>Explore with demo data <ArrowRight size={17} /></>}</button>
         <p>Demo mode shows the full decision model. Add a key to replace sample evidence with live Search, Fetch, and Agent results.</p>
