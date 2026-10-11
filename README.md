@@ -1,6 +1,6 @@
 # PriceLab
 
-PriceLab is an agentic monetization-intelligence app that connects live competitive pricing evidence to customer economics, adoption, churn, and experiment results. It recommends a packaging hypothesis and the next test—not an unsupported “perfect price.”
+PriceLab is an agentic monetization-intelligence app that connects live competitive pricing evidence to customer economics, adoption, churn, and experiment results. It recommends a packaging hypothesis and the next test, not an unsupported “perfect price.”
 
 The included demonstration asks whether LangChain should package the LangSmith portfolio as modular products, a shared commitment pool, or a hybrid.
 
@@ -23,15 +23,15 @@ The included demonstration asks whether LangChain should package the LangSmith p
 
 ## Why each TinyFish primitive is necessary
 
-### Search — discovery
+### Search: discovery
 
 Search finds direct competitors, adjacent alternatives, pricing pages, and current market evidence when the relevant URLs are not known in advance.
 
-### Fetch — normalization
+### Fetch: normalization
 
 Fetch reads the discovered pages as clean content so prices, allowances, value metrics, commitments, and enterprise fences can be compared consistently.
 
-### Agent — interaction
+### Agent: interaction
 
 Agent opens the target pricing experience, operates an interactive usage calculator when one exists, and returns structured observations. Static retrieval cannot reliably reproduce a configured quote from sliders, selectors, or multi-step interfaces.
 

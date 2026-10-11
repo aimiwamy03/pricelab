@@ -1,8 +1,8 @@
-# Launch post — LinkedIn
+# Launch post: LinkedIn
 
 Pricing pages tell you what competitors charge.
 
-They do not tell you what *you* should package—or what to test next.
+They do not tell you what *you* should package or what to test next.
 
 So we built **PriceLab** with TinyFish.
 
@@ -18,7 +18,7 @@ For the demo, we modeled a real question around LangSmith:
 
 Should a multi-product agent platform sell modular SKUs, one shared commitment pool, or a hybrid?
 
-PriceLab compared adoption-led, balanced, and margin-led structures. It recommended portfolio access plus shared credits and workload-specific multipliers—then showed what evidence could disprove that recommendation.
+PriceLab compared adoption-led, balanced, and margin-led structures. It recommended portfolio access plus shared credits and workload-specific multipliers, then showed what evidence could disprove that recommendation.
 
 The part I care about most: facts, assumptions, and inferences stay labeled. It doesn't pretend an agent can discover a magical “correct price.” It compresses weeks of market work into a decision memo your pricing team can test.
 

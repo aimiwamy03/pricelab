@@ -48,7 +48,7 @@ export default function Home() {
     <section className="hero shell" id="top">
       <div className="hero-copy"><div className="eyebrow"><Sparkles size={14} /> AGENTIC MONETIZATION INTELLIGENCE</div>
         <h1>Stop pricing from<br /><em>the rear-view mirror.</em></h1>
-        <p>Connect live market evidence to how customers adopt, consume, renew, and expand—then learn which packaging hypothesis to test next.</p>
+        <p>Connect live market evidence to how customers adopt, consume, renew, and expand. Then learn which packaging hypothesis to test next.</p>
         <div className="hero-chips"><span><Search size={14} /> Live market</span><span><BarChart3 size={14} /> Unit economics</span><span><TestTube2 size={14} /> Experiment design</span></div>
       </div>
       <aside className="hero-flow" aria-label="PriceLab workflow"><div className="flow-top"><span>HOW IT WORKS</span><b>One decision loop</b></div><ol><li><span>01</span><div><b>Observe</b><small>Live pricing evidence</small></div></li><li><span>02</span><div><b>Model</b><small>Customer economics</small></div></li><li><span>03</span><div><b>Test</b><small>Falsifiable package</small></div></li></ol><p>Facts, assumptions, and inferences stay separate.</p></aside>
@@ -88,7 +88,7 @@ export default function Home() {
       {(stage > 0 || error) && <div className="progress-wrap">{stages.map(([Icon, name, text], index) => <div className={`progress-step ${stage > index ? "active" : ""}`} key={name}><div>{stage > index + 1 || analysis ? <Check size={16} /> : stage === index + 1 ? <LoaderCircle className="spin" size={16} /> : <Icon size={16} />}</div><span><b>{name}</b><small>{text}</small></span></div>)}{error && <div className="error">{error}</div>}</div>}
     </section>
     {analysis && <Results analysis={analysis} company={form.company} />}
-    <footer className="shell"><div className="brand"><span><Fish size={18} /></span> PriceLab</div><p>Facts, assumptions, and inferences stay labeled. Recommendations are hypotheses—not guarantees.</p></footer>
+    <footer className="shell"><div className="brand"><span><Fish size={18} /></span> PriceLab</div><p>Facts, assumptions, and inferences stay labeled. Recommendations are hypotheses, not guarantees.</p></footer>
   </main>;
 }
 
