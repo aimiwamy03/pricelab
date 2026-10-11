@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       <div className="run-panel">
         <button className="key-toggle" onClick={() => setShowKey(!showKey)}><ChevronDown size={15} className={showKey ? "rotated" : ""} /> Run on live TinyFish primitives</button>
-        {showKey && <div className="key-row"><input type="password" placeholder="TinyFish API key (used for this run only)" value={apiKey} onChange={(e) => setApiKey(e.target.value)} /><button disabled={!apiKey || (stage > 0 && !analysis)} onClick={() => runAnalysis(true)}>Run live <ArrowRight size={16} /></button></div>}
+        {showKey && <div className="key-row"><input type="password" placeholder="Optional API key for local runs" value={apiKey} onChange={(e) => setApiKey(e.target.value)} /><button disabled={stage > 0 && !analysis} onClick={() => runAnalysis(true)}>Run live <ArrowRight size={16} /></button></div>}
         <button className="demo-button" disabled={stage > 0 && !analysis} onClick={() => runAnalysis(false)}>{stage > 0 && !analysis ? <><LoaderCircle className="spin" size={17} /> Running workflow</> : <>Explore with demo data <ArrowRight size={17} /></>}</button>
         <p>Demo mode shows the full decision model. Add a key to replace sample evidence with live Search, Fetch, and Agent results.</p>
       </div>
